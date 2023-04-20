@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee details</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 5px;
+            box-sizing:border-box;
+        }
+        body{
+            min-height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: wheat;
+        }
+        .container{
+            position:relative;
+            background-color: white;
+            border-radius: 6px;
+            width: 40%;
+            padding: 30px;
+            margin: 28 15px;
+        }
+         .a{
+            font-size: 20px;
+            font-weight: 100;
+            color: rgb(14, 1, 59);
+         }
+         .container form{
+            position: relative;
+            margin-top: 16px;
+            min-height: 400px;
+            background-color: wheat;
+         }
+          form .fields .input-field{
+          display: flex; 
+          width: 20px); 
+        }
+        .btn{
+          display: inline-block;
+          background-color: burlywood;
+          border-radius: 6px;
+          padding: 10px 20px;
+          box-sizing: border-box;
+          justify-content: center;
+          align-items: center;
+          }
+          .first{
+          padding: 10px;
+          font-size: 17px;
+         }
+         
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="color:rgb(14, 1, 59);"> EMPLOYEE DETAILS</h1>
+        <form action="">
+            <div>
+                <span class="a"><h3>Personal Details</h3></span>
+                <div class="fields">
+                    <div class="input-field">
+                        <label> Name :</label>
+                        <input type="text" placeholder=" Name"required>
+                    </div>
+                    
+                    <div class="input-field">
+                        <label> Age :</label>
+                        <input type="number" placeholder=" Age"required>
+                    </div>
+                    
+                    <div class="first">
+                       <label> Gender :</label>
+				        <input type="radio" name="gender" value="male"> Male
+				        <input type="radio" name="gender" value="female"> Female
+                 </div>
+
+                    <div class="input-field">
+                        <label> Designation :</label>
+                        <input type="text" placeholder="Designation"required>
+                    </div>
+                    
+                    <div class="input-field">
+                        <label> Salary :</label>
+                        <input type="number" placeholder="Salary"required>
+                    </div>
+
+                    <div class="input-field">
+                        <label> Location :</label>
+                        <select >
+                            <option>Daman</option>
+                            <option>Vapi</option>
+                            <option>salvas</option>
+                            <option>Amedabed</option>
+                            <option>Valsad</option>
+                            <option>Maroli</option>
+                            <option>Diu</option>
+                            <option>Navsari</option>
+                          </select>
+                    </div>
+
+                    <div class="input-field">
+                        <label> Email ID :</label>
+                        <input type="Email" placeholder="Use @gmail.com"required>
+                    </div>
+
+                    <div class="input-field">
+                        <label> Date of Joining:</label>
+                        <input type="date" placeholder=" joining date"required>
+                    </div>
+
+                    <div class="input-field">
+                        <label> Contact Number :</label>
+                        <input type="number" placeholder="Contact No."required>
+                    </div>
+                </div>
+                <button class="btn">SUBMIT</button>   
+            </div>
+               
+            </form>
+
+    </div>
+</body>
+</html>
